@@ -17,3 +17,4 @@ jobs:
         use-quiet-mode: 'no'
         use-verbose-mode: 'yes'
         config-file: .github/workflows/markdown_check_config.json
+        file-path: './README.md'
