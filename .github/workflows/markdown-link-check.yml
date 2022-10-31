@@ -12,13 +12,8 @@ jobs:
       ZENML_ANALYTICS_OPT_IN: false
     steps:
     - uses: actions/checkout@master
-    - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-    - run: |
-          ls ${{ github.workspace }}
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
-        use-quiet-mode: 'no'
+        use-quiet-mode: 'yes'
         use-verbose-mode: 'yes'
-        config-file: .github/workflows/markdown_check_config.json
-        file-path: './README.md'
     
