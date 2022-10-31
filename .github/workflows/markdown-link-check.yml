@@ -1,6 +1,8 @@
 name: Check Markdown Links
 
-on: workflow_call
+on:
+  pull_request:
+    types: [opened, synchronize]
 
 jobs:
   markdown-link-check:
