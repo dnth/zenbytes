@@ -18,6 +18,3 @@ jobs:
         use-verbose-mode: 'yes'
         config-file: .github/workflows/markdown_check_config.json
         file-path: './README.md'
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
