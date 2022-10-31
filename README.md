@@ -1,6 +1,6 @@
 # ZenBytes
 
-ZenBytes is a series of short practical MLOps lessons through [ZenML](https://github.com/zenml-io/zenmll) and its various integrations. It is intended for people looking to learn about MLOps generally, and also for ML practitioners who want to get started with ZenML.
+ZenBytes is a series of short practical MLOps lessons through [ZenML](https://github.com/zenml-io/zenml) and its various integrations. It is intended for people looking to learn about MLOps generally, and also for ML practitioners who want to get started with ZenML.
 
 ## :triangular_flag_on_post: ZenML 0.20.0 chapters coming soon!
 
