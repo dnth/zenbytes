@@ -17,5 +17,5 @@ jobs:
         use-quiet-mode: 'yes'
         use-verbose-mode: 'yes'
         config-file: .github/workflows/markdown_check_config.json
-        file-extention: '.md, .ipynb'
+        file-extension: '.md, .ipynb'
     
