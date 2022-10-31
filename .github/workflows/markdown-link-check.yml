@@ -11,6 +11,7 @@ jobs:
       ZENML_DEBUG: 1
       ZENML_ANALYTICS_OPT_IN: false
     steps:
+    - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
     - uses: actions/checkout@master
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
@@ -18,11 +19,4 @@ jobs:
         use-verbose-mode: 'yes'
         config-file: .github/workflows/markdown_check_config.json
         file-path: './README.md'
-    - name: Check out repository code
-        uses: actions/checkout@v3
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+    
