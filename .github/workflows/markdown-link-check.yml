@@ -11,10 +11,6 @@ jobs:
       ZENML_DEBUG: 1
       ZENML_ANALYTICS_OPT_IN: false
     steps:
-    - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
-          
     - uses: actions/checkout@master
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
@@ -22,3 +18,7 @@ jobs:
         use-verbose-mode: 'yes'
         config-file: .github/workflows/markdown_check_config.json
         file-path: './README.md'
+      
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
