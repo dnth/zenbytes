@@ -11,7 +11,7 @@ jobs:
       ZENML_DEBUG: 1
       ZENML_ANALYTICS_OPT_IN: false
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@main
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
         use-quiet-mode: 'yes'
